@@ -1,0 +1,7 @@
+# Индекс и база — производные от кода, в репозиторий не коммитятся
+index.json
+index.json.gz
+data/
+отчёт*.md
+report*.md
+__pycache__/
