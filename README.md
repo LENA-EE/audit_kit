@@ -14,6 +14,12 @@
 | `build_index.pl` | обходит `.pm`/`.pl`, разбирает парсером PPI, выдаёт JSON | Perl + PPI |
 | `tools/index_store.py` | превращает JSON в SQLite (`data/index.db`) | Python 3, только stdlib |
 | `audit_report.py` | строит отчёт по базе | Python 3, только stdlib |
+| `jarvis_index.py` | вся цепочка одной командой, включая заливку в MCP | Python 3, только stdlib |
+
+**Если индекс уже собран** — начинай с `jarvis_index.py`, он ведёт от файлов
+индексатора до живого `get_callers` в MCP и сам подсказывает следующий шаг:
+`python3 jarvis_index.py status`. Подробности — `ИНСТРУКЦИЯ_jarvis_index.md`.
+Ручные команды ниже остаются как справка о том, что происходит внутри.
 
 Подкаталог `tools/` обязателен: `index_store.py` вычисляет путь к базе как
 `../data/index.db` относительно самого себя.

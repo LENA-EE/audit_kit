@@ -1,7 +1,45 @@
-# Индекс и база — производные от кода, в репозиторий не коммитятся
+# --- Данные: производные от кода, наружу не коммитятся ---
 index.json
 index.json.gz
+index*.json
+index*.json.gz
+*.jsonl
+*.jsonl.gz
+chunks/
+chunk_*.json
+chunk_*.json.gz
+all.json
 data/
+*.db
+*.db.new
+
+# --- Результаты прогонов ---
 отчёт*.md
 report*.md
+structure_report*.md
+structured_*.txt
+структура*.txt
+*.log
+logs/
+
+# --- Личное: заметки, планы, размышления ---
+# Рабочие чеклисты и подготовка к показам — это мои мысли, а не инструмент.
+ШАГИ_*.md
+ЗАМЕТКИ*.md
+ЧЕРНОВИК*.md
+К_ДЕМО*
+*_личное.md
+*_черновик.md
+TODO*.md
+ПРОМПТ_*.md
+личное/
+
+# --- Служебное ---
 __pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+.claude/
